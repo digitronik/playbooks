@@ -1,7 +1,8 @@
 ---
-- name: Provisioning playbook
-  hosts: all
-  tasks: 
-    - name: Touch new file on guest vm
-      - shell: touch my_test
-        state: present
+- name: Creating empty file using Ansible playbook
+  hosts: localhost
+  tasks:
+    - shell: touch my_test
+      state: present
+      register: output
+    - debug: msg="The file with the given name has been created --> {{ output.stdout }}"
