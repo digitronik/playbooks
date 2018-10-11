@@ -1,0 +1,6 @@
+- hosts: all
+  tasks:
+  - name: Create Empty File
+    file:
+      path: "/digitronik.txt"
+      state: touch
