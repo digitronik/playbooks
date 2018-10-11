@@ -1,6 +1,6 @@
 ---
 - name: Creating empty file using Ansible playbook
-  hosts: localhost
+  hosts: all
   tasks:
     - shell: touch my_test
       state: present
