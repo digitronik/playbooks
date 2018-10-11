@@ -3,6 +3,5 @@
   hosts: all
   tasks: 
     - name: Touch new file on guest vm
-      file:
-        path: /tmp/ansible-pre-playbook
-        state: touch
+      - shell: touch my_test
+        state: present
