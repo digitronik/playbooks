@@ -6,5 +6,3 @@
       file:
         path: /tmp/cb_test_file
         state: touch
-      register: output
-    - debug: msg="The file with the given name has been created --> {{ output.stdout }}"
