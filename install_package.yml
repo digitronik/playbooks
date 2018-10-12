@@ -2,7 +2,7 @@
 - name: Install Package
   hosts: all
   vars: 
-    package_name: iperf
+    package_name: httpd
 
   tasks:
   - name: install package
