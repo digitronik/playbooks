@@ -2,6 +2,7 @@
 - name: Creating empty file using Ansible playbook
   hosts: all
   sudo: yes
+  user: root
   tasks:
     - shell: touch /my_test
       state: present
