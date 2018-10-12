@@ -4,5 +4,5 @@
   tasks:
     - name: Touch new file
       file:
-        path: /tmp/cb_test_file
+        path: test_file
         state: touch
