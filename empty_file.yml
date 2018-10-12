@@ -1,11 +1,10 @@
 ---
 - name: Creating empty file using Ansible playbook
   hosts: all
-  sudo: yes
   tasks:
     - name: Touch new file
       file:
-        path: /tmp/ansible-pre-playbook
+        path: /tmp/cb_test_file
         state: touch
       register: output
     - debug: msg="The file with the given name has been created --> {{ output.stdout }}"
